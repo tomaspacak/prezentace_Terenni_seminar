@@ -1,0 +1,660 @@
+:root {
+    --text:#BBBBBB;
+    --title: rgb(255, 255, 255);
+    --bg:#20242A;
+    --bg2:#414D5C;
+    --bg-footer:#47474D;
+    --text-footer:#959393;
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: var(--bg);
+}
+
+/* navigace */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    gap: 1.5vw;
+    margin-top: 0;
+    margin-right: 0.25em;
+    list-style-type: none;
+    background-size: contain;
+}
+.nav__icon {
+    width: 8vw;
+    height: 8vw;
+    border: 3px solid var(--bg-footer);
+    border-radius: 0 0 10px 10px;
+    background-color: var(--bg-footer);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav__icon:hover {
+    padding-top: 1vw;
+    background-position: 5%;
+}
+.nav__icon--home {
+    background-image: url(../img/icons8-home.svg);
+}
+.nav__icon--instagram {
+    background-image: url(../img/icons8-instagram.svg);
+}
+.nav__icon--pslib {
+    background-image: url(../img/pslib_icon.svg);
+}
+
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.homeHeader__title {
+    align-self: center;
+    margin-top: 1.5em;
+}
+.header__title {
+    margin-bottom: 0.5em;
+}
+.header__underTitleLine {
+    display: block;
+    width: 95%;
+    height: 0.1em;
+    background-color: var(--title);
+}
+.secNav {
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    margin-top: 0;
+}
+.secNav__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 1em;
+    margin-top: 0;
+}
+.secNav__odkaz {
+    display: block;
+    text-decoration: none;
+    color: var(--title);
+    padding: 0.5em;
+    border-radius: 0 0 20% 20%;
+}
+.secNav__odkaz:hover {
+    background-color: var(--title); 
+    color: var(--bg);
+    font-weight: bolder;
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: var(--bg-footer);
+    color: var(--text-footer);
+    /*font-size: 8px;*/
+    border-top: 0.5em solid white;
+}
+.footer__kategory {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.footer__title {             
+    color: var(--text);
+    margin-bottom: 0;
+    align-self: center;
+}
+.footer__description {
+    margin-left: 0.5em;
+}
+.footer__description--small {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer__kategory--center {
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__line {
+    display: inline-block;
+    height: 4em;
+    width: 1px;
+    background-color: aliceblue;
+    align-self: center;
+}
+.footer__instagramLogo::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    color: var(--text-footer);
+    background-position: center;
+    background-size: contain;
+    margin-right: 0.3em;
+    margin-bottom: -0.2em;
+    background-image: url(../img/instagram.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* HOME - index */
+.homeHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Full/homeHeader_bg.jpg);
+    background-size: cover;
+    height: 20vh;
+}
+
+.primaryNav {
+    display: flex;              /*  layout? */
+    flex-direction: column;
+    border-top: 0.5em solid var(--title);
+    border-bottom: 0.5em solid var(--title) ;
+}
+.primaryNav__kategory {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.primaryNav__kategory--serie {
+    background-image: url(../img/nahled/navSerie_390.jpg);
+}
+.primaryNav__kategory--best{
+    background-image: url(../img/nahled/navBest_390.jpg);
+}
+.primaryNav__kategory--tematicka{
+    background-image: url(../img/nahled/navTema_390.jpg);
+}
+.primaryNav__kategory--galerie{
+    background-image: url(../img/nahled/navGallery_390.jpg);
+}
+.primaryNav__title {
+    margin-bottom: 0em;
+    margin-top: 0em;
+    margin-left: 1em;
+}
+.primaryNav__description {
+    width: 15em;
+    margin: 0;
+    margin-left: 1.5em;
+}
+.button {
+    display: block;
+    position: absolute;
+    right: 1em;
+    bottom: 2em;
+    border: solid 1px white;
+    text-align: center;
+    width: 20vw;
+    color: white;
+    text-decoration: none;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+.button:hover {
+    background-color: #414D5C;
+    color: rgb(255, 255, 255);
+    border: solid 3px #414D5C;
+}
+
+.oSeminari {
+    background-color: #20242A;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+.oSeminari__text {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+.oSeminari__title {
+    margin-bottom: 1em;
+    text-align: center;
+}
+.oSeminari__underTitle {
+    margin-bottom: 0.5em;
+}
+.oSeminari__decription {
+    margin-top: 0em;
+}
+.oSeminari__text {
+    margin-top: 0em;
+}
+.oSeminari__imgContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 5em;
+    margin-left: 2em;
+}
+.imgContainer__odkaz {
+    display: block;
+    flex-basis: 45%;
+}
+.imgContainer__img {
+    width: 100%;
+}
+
+
+
+
+/* SÉRIE */
+
+.serie__wrapper {
+  
+    background-color: #20242A
+}
+
+.foto {
+    display: block;
+    margin: 0;
+    overflow: hidden;    
+}
+.foto__odkaz {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.foto__img {
+    width: 100%;
+    height: 100%;      
+}
+.foto__name {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    text-decoration: none;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    visibility: visible;
+    padding: 0.5em;
+}
+.foto__odkaz:hover .foto__name {
+    visibility: hidden;
+}
+
+
+/* BEST OF */
+.bestFoto {
+    display: flex;            
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 0;
+}
+.foto__odkaz {
+    margin: 0;
+}  
+
+.bestFoto__img {
+ width: 100%;
+ border-bottom: 0.5em solid white;
+ border-top: 0.5em solid white;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.text__title {             
+    margin-bottom: 0;
+}
+.text__description {  
+    margin-top: 0.3em;
+    margin-bottom: 3em;
+    color: var(--text);
+}
+
+
+
+
+
+/* TEMATICKA */
+.tema {
+    padding-bottom: 3em;
+    padding-top: 3em;
+    background-color:#20242A;
+}
+.tema--krehkaKrasa {
+    background-color:#414D5C;
+}
+.tema__text {
+    margin-left: 1em;
+    margin-top: 0;
+    width: 90%;
+}
+.tema__title {
+    margin-bottom: 0.5em;
+}
+.tema__description {
+    margin: 0;
+}
+.tema__odkaz {
+    display: block;
+}
+.tema__img {
+    width: 100%;
+    border-top:  5px solid white;
+    border-bottom: 5px solid white;
+}
+
+
+/* GALERIE */
+.gallery__wraper {
+    margin-bottom: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    gap: 0.5em;
+}
+.fotoOdkaz {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.fotoOdkaz__img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+.fotoOdkaz__img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+    .nav {
+        width: 21vw;
+        gap: 1.5vw;
+        margin-right: 1em;
+    }
+    .nav__icon {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .footer__line {
+        height: 8.5em;
+    }
+ 
+
+    /* HOME - index */
+    .homeHeader {
+        height: 30vh;
+    }
+    .primaryNav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .primaryNav__kategory {
+        flex-basis: 50%;
+        height: 30vw;   
+    }
+    .button {
+        width: 5em;
+    }
+    .oSeminari__text {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        height: 100%;
+        flex-grow: 2;      
+    }
+    .oSeminari__decription {
+        width: 80%;
+    }
+    .oSeminari__imgContainer {
+        flex-direction: column;
+        
+        height: 100%;
+       /* width: 100%;*/
+        margin: 0;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: 5em;
+        gap: 1em;
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    .imgContainer__img {
+        width: 100%;
+    }
+
+
+
+    /* SÉRIE */ 
+    .foto {
+        flex-basis: 48%;
+    }
+    .foto--2 {
+        flex-grow: 1;
+    }
+    .foto--4 {
+        flex-grow: 1;
+    }
+    .foto--5 {
+        flex-grow: 1;
+    }
+    .foto__name {
+        bottom: 0;
+    }
+
+
+    /* BEST OF */
+    .text {    
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3em;
+    }
+    .bestFoto {
+        width: 90%;
+        border-left: 0;
+    }
+    .bestFoto__img {
+        border: solid 7px white;
+        border-left: 0;
+    }
+
+
+    /* TÉMATICKÁ */
+    .tema__odkaz {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: -3em;
+    }
+    .tema__img {
+        width: 70vw;
+        border-left: 10px solid white;
+        border-top:  10px solid white;
+        border-bottom: 10px solid white;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+
+    .nav {
+        width: 15vw;
+        gap: 0.5vw;
+        margin-right: 1em;
+        margin-top: 0;
+    }
+    .nav__icon {
+        width: 4vw;
+        height: 4vw;
+        border: 3px solid #47474D;
+        border-radius: 0 0 10px 10px;
+      
+    }
+    .nav__icon:hover {
+        padding-top: 0.5vw;
+        background-position: 5%;
+    }
+    .header {
+        margin-bottom: 2em;
+    }
+    .secNav {
+        width: 36%;
+        align-self: flex-end;
+        margin-right: 2em;
+    }
+    
+
+    
+
+    /* HOME - index */
+    .oSeminari__wrapper {
+        margin-bottom: 3em;
+    }
+    .oSeminari__text {
+        justify-content: space-between;
+        height: 100%;
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+    .oSeminari__imgContainer {         
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        margin-left: 1em;
+        margin-right: 0em;
+        flex-basis: 50%;
+        height: 100%;
+        gap: 0.5em;
+        
+
+    }
+    .imgContainer__odkaz {
+        width: 0;
+       flex-basis: 48%;
+    }
+
+
+    /* SÉRIE */
+    
+    .foto {
+        flex-basis: 30%;
+    }
+    .foto--1 {
+        flex-grow: 1;
+    }
+    .foto--2 {
+        flex-grow: 1;
+    }
+    .foto--4 {
+        flex-grow: 2;
+    }
+    .foto--5 {
+        flex-grow: 2;
+    }
+   
+
+    /* BEST OF */
+    .text {
+        flex-direction: column;
+        justify-content: space-around;
+        flex-basis: 60%;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .text__title {
+        margin-top: 0.5em;
+    }
+    .text__description {
+        margin-bottom: 1em;
+    }
+    .bestFoto {
+        width: 90%;
+        border-left: 0;
+    }
+    .bestFoto__img {
+        border: solid 10px white;
+        border-left: 0;
+    }
+
+    /* TÉMATICKÁ */
+    .tema {                               
+        display: flex;
+        justify-content: space-between;
+    }
+    .tema__odkaz {
+        order: 2;
+        margin-bottom: 0;
+        margin-right: 2em;
+        justify-content: center;
+        border: 10px solid white;
+        flex-basis: 55%;
+    }
+    .tema__odkaz--krehkaKrasa {
+        order: -1;
+        margin-left: 2em;
+    }
+    .tema__text {
+        flex-basis: 40%;
+        margin-left: 2em;
+        margin-right: 4em;
+    }
+    .tema__title {
+        margin-bottom: 0.2em;
+    }
+    .tema__img {
+        width: 100%; 
+        border: 0;
+    }
+
+
+    /* GALERIE */
+
+    
+}
+
+
