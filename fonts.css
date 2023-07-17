@@ -1,0 +1,236 @@
+:root {
+    --text:#BBBBBB;
+    --title: rgb(255, 255, 255);
+    --bg:#20242A;
+    --bg2:#414D5C;
+    --bg-footer:#47474D;
+    --text-footer:#959393;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--text);
+    position: relative;   /* ?????????? */
+}
+
+h1, h2 {
+    font-family: 'Paytone One', sans-serif;
+    color: var(--title);
+}
+h3 {
+    color: var(--title);
+}
+
+.header__title {
+    font-size: 2.7em;
+}
+
+.secNav__odkaz {
+    font-size: 1em;
+}
+
+
+
+/*footer*/
+.footer__title {
+    color: var(--text);   /* zbytecny*/
+    font-size: 0.8em;
+}
+.footer__description {
+    font-size: 0.5em;
+}
+.footer__description--small {
+    font-size: 0.4em;
+}
+
+
+
+
+
+
+
+/* HOME - index */ 
+.homeHeader__title {
+    font-size: 1.7em;
+}
+.primaryNav__title {
+    font-size: 1.3em;
+    color: var(--title);   /* zbytecny*/
+}
+.primaryNav__description {
+    width: 15em;    /* ?*/
+    font-size: 1em;
+}
+.button {
+    font-size: 1em;    /* dat nahoru */ 
+}
+.oSeminari__title {
+    color: white;   /* zbytecny*/
+    font-size: 2.5em;
+}
+.oSeminari__underTitle {
+    font-size: 1.5em;
+    font-weight: 600;
+    
+}
+.oSeminari__decription {
+    margin-top: 0em;   /*?*/
+    font-size: 1em;
+}
+
+
+
+/* SÉRIE */
+
+
+
+
+/* BEST OF */
+
+.header__title {
+    font-size: 1.8em;   /* opakuje se */
+    text-align: center;
+}
+.text__title {
+    color: var(--title);
+    font-size: 1.5em;
+}
+.text__description {
+    font-size: 1.2em;
+    color: var(--text);  /* zbytecny*/
+}
+
+
+
+/* TEMATICKÁ */
+.tema__title {
+    font-size: 1.5em;
+}
+.tema__description {
+    font-size: 1.2em;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+
+    .header__title {
+        font-size: 2.8em;
+    }
+    .secNav__odkaz {
+        font-size: 1.5em;
+    }
+
+
+    .footer__title {
+        font-size: 1.2em;
+    }
+    .footer__description {
+        font-size: 0.9em;
+    }
+    .footer__description--small {
+        font-size: 0.8em;
+    }
+
+    /* HOME - index */
+    .homeHeader__title {
+        font-size: 3em;
+    }
+    .primaryNav__title {
+        font-size: 1.5em;
+    }
+    .primaryNav__description {
+        width: 15em;    /* ?*/
+        font-size: 1em;
+    }
+    .button {
+        font-size: 1em;    /* dat nahoru */ 
+    }
+    .oSeminari__title {
+        color: white;   /* zbytecny*/
+        font-size: 2.5em;
+    }
+    .oSeminari__underTitle {
+        font-size: 2em;
+        font-weight: 600;
+        
+    }
+    .oSeminari__decription {
+        margin-top: 0em;   /*?*/
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .header__title {
+        font-size: 4em;
+    }
+    .secNav__odkaz {
+        font-size: 1.3em;
+    }
+
+    .footer__title {
+        font-size: 1.2em;
+    }
+    .footer__description {
+        font-size: 1em;
+    }
+    .footer__description--small {
+        font-size: 0.8em;
+    }
+
+    /* HOME - index */
+  
+    .primaryNav__title {
+        font-size: 1.8em;
+    }
+    .primaryNav__description {
+        font-size: 1.2em;
+    }
+    .button {
+        font-size: 1.2em;    /* dat nahoru */ 
+    }
+    .oSeminari__title {
+        font-size: 2.8em;
+    }
+    .oSeminari__underTitle {
+        font-size: 1.8em;
+    }
+    .oSeminari__decription {
+        font-size: 1.1em;
+    }
+
+
+    /* SÉRIE */
+
+
+    /* BEST OF */
+    .text__title { 
+        font-size: 1.8em;
+    }
+    .text__description {
+        font-size: 1.2em;
+    }
+
+
+
+    /* TÉMATICKÁ */
+    .tema__description {
+        font-size: 1.2em;
+    }
+
+
+}   
+
+
+
+
+
+
+
+
+
+

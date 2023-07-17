@@ -1,0 +1,206 @@
+html {
+    position: relative;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* nav */
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 0.5em;
+}
+
+/* HOME - index */
+.primaryNav {
+    display: flex;
+    flex-direction: column;
+}
+.oSeminari__container {
+    display: flex;             
+    flex-direction: column;
+}
+.oSeminari__wrapper {
+    display: flex;             
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+/* SÉRIE */
+.serie__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 2em;
+    margin-bottom: 0.7em;
+}
+
+
+
+/* BEST OF */
+.bestOf__wrapper{               
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* TÉMATICKÁ */ 
+
+
+
+
+/* GALERIE */ 
+.fotoOdkaz--1 {               
+    grid-area: a;
+}
+.fotoOdkaz--2 {
+    grid-area: b;
+}
+.fotoOdkaz--3 {
+    grid-area: c;
+}
+.fotoOdkaz--4 {
+    grid-area: d;
+}
+.fotoOdkaz--5 {
+    grid-area: e;
+}
+.fotoOdkaz--6 {
+    grid-area: f;
+}
+.fotoOdkaz--7 {
+    grid-area: g;
+}
+.fotoOdkaz__img--8 {
+    grid-area: h;
+}
+.fotoOdkaz--9 {
+    grid-area: j;
+}
+.fotoOdkaz--10 {
+    grid-area: i;
+}
+.fotoOdkaz--11 {
+    grid-area: k;
+}
+.fotoOdkaz--12 {
+    grid-area: l;
+}
+.fotoOdkaz--13 {
+    grid-area: m;
+}
+.gallery__wraper {
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c b"
+    "d e"
+    "f g"
+    "f h"
+    "i j"
+    "k j"
+    "l m";
+
+    gap: 0.5em;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .nav {
+        margin-right: 1em;
+    }
+    /* HOME - index */
+    .primaryNav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .oSeminari__wrapper {
+        flex-direction: row;
+    }
+   
+
+
+    /* SÉRIE */
+    .serie__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+
+    /* BEST OF */
+    
+
+    /* TÉMATICKÁ */
+
+
+    /* GALERIE */
+    .gallery__wraper {
+        grid-template-areas: 
+        "a b c"
+        "d b e"
+        "f g h"
+        "f i j"
+        "k l j"
+        "m . .";
+       
+       /* gap: 1em;*/
+        margin-right: 2em;
+        margin-left: 2em;
+       
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    
+    /* HOME - index */
+    .oSeminari__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 1em;
+    }
+
+
+    /* SÉRIE */
+    .serie__wrapper {
+        margin-right: 3.5em;     
+        margin-left: 3.5em;
+    }
+
+    /* BEST OF */
+    .bestOf__wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 5em;    
+    }
+
+
+    /* TÉMATICKÁ */
+
+
+
+    /* GALERIE */
+    .gallery__wraper {
+        grid-template-areas: 
+        "a b c d"
+        "e b f g"
+        "h j f i"
+        "k j l m";
+       
+        gap: 0.5em;
+        margin-right: 2.5em;          
+        margin-left: 2.5em;
+    }
+
+}
